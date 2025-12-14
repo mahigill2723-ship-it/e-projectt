@@ -1,0 +1,137 @@
+/* pricelist start */
+.pricelist-bgcolor {
+  background-image: url( backimg3.png);
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+.div1{
+  height: 200px;
+}
+/* .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  background: whitesmoke;
+  opacity: 0.9;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+} */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  background-color: aliceblue;
+  opacity: 0.7;
+  position: relative;
+  z-index: -2;
+   
+}
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: black;
+}
+.header1{
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  background-color: aliceblue;
+  opacity: 0.7;
+  position: relative;
+  z-index: -2;
+}
+.header1 h1{
+  margin: 0;
+  font-size: 2.5rem;
+  color: black;
+}
+.header2{
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  background-color: aliceblue;
+  opacity: 0.7;
+  position: relative;
+  z-index: -2;
+}
+.header2 h1{
+  margin: 0;
+  font-size: 2.5rem;
+  color: black;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  
+  
+}
+.product-card {
+  background-color: black;
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 1 1 calc(33.333% - 2rem);
+  box-shadow: 0 4px 6px rgb(92, 92, 92);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0px 6px rgb(145, 145, 145);
+  background-color: black;
+  opacity: 0.9;
+
+}
+.product-image {
+  width: 50%;
+  height: 200px;
+  object-fit: cover;
+  padding-top: 10px;
+}
+
+.product-details {
+  padding: 1rem;
+}
+.product-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem;
+  color: white;
+}
+.product-description {
+  font-size: 1.1rem;
+  margin: 0 0 1rem;
+  color: white;
+}
+
+.product-price {
+  font-size: 1.25rem;
+  color: #53ff7b;
+  margin: 0 0 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .product-card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+@media (max-width: 768px) {
+  .product-card {
+    flex: 1 1 100%;
+  }
+}
+.product-list .btn{
+  margin-left: 10px;
+  height: 50px;
+  width: 145px;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: bold;
+}
+/* pricelist end  */

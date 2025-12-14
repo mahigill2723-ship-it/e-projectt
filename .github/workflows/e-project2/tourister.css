@@ -1,0 +1,110 @@
+/* ===== GENERAL ===== */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f0f0f;
+    color: #fff;
+}
+
+/* ===== HERO SECTION ===== */
+.brand-hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #111 0%, #222 100%);
+}
+
+.brand-hero h1 {
+    font-size: 3rem;
+    color: #ffde59;
+    margin-bottom: 10px;
+}
+
+.brand-hero .tagline {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* ===== PRODUCT GRID ===== */
+.brand-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 50px;
+}
+
+/* ===== PRODUCT CARD ===== */
+.card {
+    background-color: #111;
+    flex: 1 1 calc(25% - 20px); /* 4 cards per row */
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(255,222,89,0.4);
+}
+
+.product-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #ffde59;
+}
+
+.stars {
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.1rem;
+    color: #53ff7b;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ffde59, #ffc107);
+    color: #000;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255,222,89,0.5);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1200px) {
+    .card {
+        flex: 1 1 calc(33.33% - 20px); /* 3 cards per row */
+    }
+}
+
+@media (max-width: 900px) {
+    .card {
+        flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex: 1 1 100%; /* 1 card per row */
+    }
+}
